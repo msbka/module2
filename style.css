@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+    font-family: "Calibri", "Comic Sans", cursive;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 1.75em;
+    text-align: center;
+}
+
+section {
+    background-color: #969393;
+    border: 2px solid #111111;
+    margin: 0 0 25px 0;
+    padding: 0;
+}
+
+section h2 {
+    border-bottom: 2px solid #111111;
+    border-left: 2px solid #111111;
+    margin: 0 0 0 60%;
+    font-size: 1.25em;
+    text-align: center;
+    padding: 2px 0;
+    width: 40%;
+}
+
+section p {
+    padding: 0 5px 5px 5px;
+}
+
+#first h2 {
+    background-color: #e8c0c2;
+    color: #111111;
+}
+
+#second h2 {
+    background-color: #a50f0d;
+    color: #e8e8e8;
+}
+
+#third h2 {
+    background-color: #e2d67a;
+    color: #111111;
+}
+
+
+
+@media (min-width: 992px) {
+    section {
+        float: left;
+        margin-right: 2.5%;
+        width: 30%;
+    }
+
+    #first {
+        margin-left: 2.5%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    section {
+        float: left;
+        margin-right: 2.5%;
+        width: 46.25%;
+    }
+    #first {
+        margin-left: 2.5%;
+    }
+
+    #third {
+        clear: left;
+        margin-left: 2.5%;
+        width: 95%;
+    }
+
+    #third h2 {
+        margin: 0 0 0 80%;
+        width: 20%;
+    }
+}
+
+@media (max-width: 767px) {
+    section {
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+        width: 90%;
+    }
+}
